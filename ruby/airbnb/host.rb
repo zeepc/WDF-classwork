@@ -6,8 +6,8 @@ class Host
 		@host = host
 		@listings = []
 	end
-	def create_listing(host,beds,dates_available, cancellation, guest, reviews,price)
-		new_listing = Listing.new(@host,beds,dates_available, cancellation, guest, reviews,price)
+	def create_listing(host,beds,dates_available,cancellation,guest,reviews,price)
+		new_listing = Listing.new(@host,beds,dates_available,cancellation,guest,reviews,price)
 		@listings.push(new_listing)
 	end
 end

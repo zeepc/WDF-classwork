@@ -8,7 +8,7 @@ class Classroom
   end
 
   def addStudent(student)
-    if @students[student.name]
+    if @students[student.name] = student
       raise "Sorry, #{student} is already in here."
     end
     @students.push(student)

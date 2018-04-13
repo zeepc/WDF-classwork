@@ -1,11 +1,12 @@
 require 'sinatra'
-require 'adorable_cat'
+require 'ruby_jokes'
+require 'unirest'
 
 #Index Route
 #HTTP VERB +ROUTE IN QUOTES
 
 get '/' do 
-	@x= AdorableCat.get_cat_data
+	@x= joke.get_joke({exclude: ['explicit']})
 	erb :index
 	
 end

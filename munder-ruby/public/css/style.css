@@ -1,0 +1,196 @@
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+section{
+	height:850px;
+}
+h1 {
+	font-family: 'Secular One', sans-serif;
+}
+ul {
+	display:flex;
+	float:right;
+}
+li {
+	font-family: 'Secular One', sans-serif;
+	list-style-type:none;
+	display:flex;
+	flex-wrap:wrap;
+	font-size: 25px;
+	color:aliceblue;
+	margin-right: 50px;
+	margin-top: 30px;
+	text-shadow: 3px 4px 5px #05193e7a;
+}
+li:hover {
+	transform: scale(1.1);
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+footer{
+	position:flex;
+	height:150px;
+	background-color: #a9a7b3;
+}
+input {
+	position:absolute;
+	margin-top:400px;
+	margin-left:280px;
+}
+.hide{
+	display: none;
+}
+
+/*paper plane*/
+.plane {
+	position: absolute;
+	margin: 500px 1000px;
+	animation: accross 1s  ease-in forwards;
+}
+
+
+/*MD Font "Logo" */
+.logo {
+	margin-right:410px;
+	margin-top:-15px;
+	font-size:33px;
+}
+/* sections background properties*/
+.home {
+	background-image:
+	linear-gradient(
+      #2c5977, #3fad97d6, #8897c16b);
+}
+.about {
+	background-image:
+    linear-gradient(
+      #2c5977, #3fad97d6, #8897c16b);
+    );
+}
+
+.contact {
+	background-color:#1c2c3e;
+	height:600px;
+}
+/* page content:images and text*/
+.mainMessage {
+	position:absolute;
+	margin-top:14%;
+	margin-left:23%;
+	background-color: #ffffff4a;
+	height:450px;
+	width:700px;
+	border-top-left-radius: 17% 20%;
+	border-top-right-radius: 17% 20%;
+	border-bottom-left-radius: 17% 20%;
+	border-bottom-right-radius: 17% 20%;
+	/*animation: fade-in 4s forwards;
+	animation-delay: 5s;*/
+}
+.mainMessage h1 {
+	text-align:center;
+	margin-top: -10px;
+	font-size: 100px;
+	color: #edf4fb;
+	text-shadow: 2px 3px 5px #383b3cde;
+}
+.mainMessage p {
+	text-align:center;
+	margin-top: -50px;
+	color:aliceblue;
+	font-size: 30px;
+	text-shadow: 1px 3px 1px #383b3cde;
+}
+.aboutUs {
+	text-align:justify;
+	float:right;
+	color: aliceblue;
+	margin:80px 50px 0px 650px;
+}
+.mySlides {										
+	position:absolute;
+	margin:150px 30px;
+	box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.2)
+}
+
+.slides {
+	height:500px;
+	width:520px;
+}
+
+.messages {
+	position:absolute;
+	margin-top:9%;
+	margin-left:23%;
+	height:450px;
+	width: 600px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-top-left-radius: 17% 20%;
+	border-top-right-radius: 17% 20%;
+	border-bottom-left-radius: 17% 20%;
+	border-bottom-right-radius: 17% 20%;
+}
+.namefield {
+	position:absolute;
+	width:370px;
+	height:25px;
+	margin-top:70px;
+	margin-left:117px;
+
+}
+.emailfield {
+	position:absolute;
+	height:25px;
+	width: 370px;
+	margin-top:120px;
+	margin-left:117px;
+}
+
+.address{
+	margin-left: 40px;
+	font-family: 'Secular One';
+	display: block;
+	text-align: left;
+	color: #3a3737c2;
+}
+
+.contactBlock {
+	position: absolute;
+	margin-top: 35px;
+	font-size: 20px;
+}
+.footLinks {
+	margin-right: 10px;
+	margin-top:35px;
+}
+
+#msgBox {
+	position:absolute;
+	height: 200px;
+	width:370px;
+	margin-top:180px;
+	margin-left:117px;
+	resize:none;
+}
+.dwight{
+	position:absolute;
+	top: 23%;
+	left:3%;
+}
+
+/* ANIMATIONS! */
+
+@keyframes accross {
+	0%{transform: translateX(0px) translateY(0px)}
+	20%{ transform: translateX(-100px)translateY(-100px)}
+	50%{ transform: translateX(-200px)translateY(-200px)}
+	70%{ transform: translateX(-300px)translateY(-300px)}
+	100%{ transform: translateX(-815px)translateY(-480px)}
+}
+/*@keyframes fade-in {
+	0%{opacity:0;}
+	100%{opacity:1;}
+}*/

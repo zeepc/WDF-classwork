@@ -15,9 +15,6 @@ get '/:id' do
 		params[:id] == "contact"
 		erb :contact
 	elsif 
-		params[:id] == "dwight"
-		erb :dwight
-	elsif 
 		params[id] == "home"
 		erb :home		
 	else

@@ -1,0 +1,29 @@
+body{
+	background-color: #e0e0e0;
+
+}
+.nav-wrapper{
+	background-color: #880e4f;
+}
+
+#photo{
+	position: absolute;
+	top: 30%;
+	background-color:#bdbdbd;
+	height: 350px;
+	width: 350px;
+}
+#content{
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	background-color:#bdbdbd;
+	height: 350px;
+	width: 550px;
+
+}
+
+#form{
+	position: absolute;
+	top: 17%;
+}

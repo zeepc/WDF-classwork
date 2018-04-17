@@ -1,11 +1,8 @@
-<div class="col s12 m6 l4" id="form">
-	<form action="/postroute" method="POST">
-  		 <input type="text" name="booksearch" />
-  		<button>Search</button></form>
-  	</div>
-      	<div class="col s6 m6 l4" id="photo"><img src="<%= @image_link %>"></div>
-      	<div class="col s6 m6 l4" id="content">
-      		<h2 class="title"><%= @title %></h2>
-      		<p class="author"><%= @author %></p>
-      		<a href="<%= @info_link %>">Info</a>
-      	</div>
+<%= @book.each do |elem, val| %>
+  <div class="col s6 m6 l4" id="photo"><img src="<%= book.image_link %>"></div>
+    <div class="col s6 m6 l4" id="content">
+      	<h2 class="title"><%= book.title %></h2>
+      	<p class="author"><%= book.author %></p>
+      	<a href="<%= book.info_link %>">Book Info</a>
+    </div>
+<% end %>

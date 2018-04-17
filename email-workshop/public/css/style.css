@@ -1,0 +1,36 @@
+body{
+	background-color: #fff;
+	height: 900px;
+
+}
+
+.nav-wrapper{
+	background-color: #880e4f;
+}
+
+#welcome{
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	height: 350px;
+	width: 400px;
+}
+
+
+#form{
+	position: absolute;
+	top: 47%;
+	left: 50%;
+}
+.nav-wrapper{
+	background-color: #880e4f;
+}
+
+/*#photo{
+	position: absolute;
+	top: 30%;
+	background-color:#bdbdbd;
+	height: 350px;
+	width: 350px;
+}*/
+

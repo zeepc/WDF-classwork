@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'googlebooks'
-# require './books'
 
 get '/' do
 	erb :index
@@ -10,12 +9,16 @@ end
 post '/postroute' do
    
     booksearch = params[:booksearch] 
-	book = GoogleBooks.search(booksearch)
-	@my_book = book.first
-	@title = my_book.title
-	@author = my_book.authors
-	@photo = my_book.image_link
-	@info = my_book.info_link
+    @booksearch = booksearch
+	@book = GoogleBooks.search(booksearch, {:count =>5})
+	
+	puts @book
 
+	@book.each do |book, value|
+	puts book.title
+	puts book.authors
+	puts book.image_link
+	puts book.info_link
+end
 	erb :postroute
 end

@@ -16,9 +16,8 @@ post '/contact' do
   @comment = params[:comment]
  
 puts 'blah'
-puts ENV['SENDGRID']
 puts 'ENV WORKS!!!!!!!!'
-from = Email.new(email: "test@example.com")
+from = Email.new(email: @name)
 to = Email.new(email: 'zperezcanals@gmail.com')
 subject = 'Wendy vs Ronald'
 content = Content.new(type: 'text/plain', value: @comment)

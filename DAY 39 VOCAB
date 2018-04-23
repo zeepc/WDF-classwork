@@ -1,0 +1,62 @@
+DAY 39 VOCAB
+
+1. MVC
+	Model View Control
+	A design patten/architechtural pattern/paradigm.
+	It's the design pattern that Rails will follow. 
+	A specific structure that we build applications around. Each piece of code has it' sown conern/job.
+
+
+
+2. Design Pattern/Paradigm
+
+	SEE MVC
+
+
+
+3. Separation of Concerns
+	
+	Making sure all code or structure is concern about it's own job and does not rely on other pieces.
+
+
+
+4. ORM/ Active Record
+	OBJECT RELATIONAL METHOD
+		A way we can use languages to access a virtual database. A middleman between our database and app. It will map out our tables in a way that will be meaningful for ruby to use. 
+
+
+
+5. Rake/ Rakefile/ Tasks
+
+	Jobs that do specific jobs. It will run operations that have been defined by Active Record.
+
+
+
+
+6. Migrations
+
+
+7. Schema/ Seed Files
+
+
+8. Active Record Associations
+
+
+
+//
+CREATE MIGRATION ON TERMINAL
+rake db:create_migration NAME=create_cats
+---In new migration file, the def will be called change and inside you add what you want to change i.e.
+	----remove_index, create_table, add_column
+
+		***EXAMPLE****
+		def change
+		create_table :cats do |t|
+		t.string :name
+		t.integer :age
+		t.string :breed
+		end
+
+MIGRATE
+rake db:migrate <--------RUNS MIGRATION ON DB
+

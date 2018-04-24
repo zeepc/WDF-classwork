@@ -20,6 +20,10 @@ require_relative './models/courseStudent'
 
 set :database, {adapter: 'postgresql', database: 'relations'}
 
+# get '/' do
+	
+# 	erb :class
+# end
 
 #We want to display the following :
 #All students part of a specific course
@@ -29,7 +33,23 @@ get '/course/:id' do
     currentcourse = params[:id]
     myCourse = Course.find(currentcourse)
     @allcoursestudents = myCourse.students
-    @allinstructors = myCourse.instructors
+    @allinstructors = myCourse.instructor
     @alltas = myCourse.tas
     erb :class
+end
+
+
+get '/students' do
+	@students = Student.all
+	erb :students
+end
+
+
+get '/students/new' do
+	erb :new
+end
+
+post '/new' do
+	Student.create(name:params[:name], year: params[:year])
+	erb :students
 end

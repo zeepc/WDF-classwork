@@ -1,3 +1,3 @@
 class Instructor < ActiveRecord::Base
-	belongs_to :course
+	has_one :course
 end

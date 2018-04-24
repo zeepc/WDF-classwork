@@ -1,5 +1,11 @@
 body{
-	background-color: #744253;
+	background-color: #73c3a6;
+	height: 800px;
+}
+
+img.d-block{
+	height:600px;
+	background-size:cover;
 }
 
 .kitteh, .owner{

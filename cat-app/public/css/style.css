@@ -1,0 +1,17 @@
+body{
+	background-color: #744253;
+}
+
+.kitteh, .owner{
+	position:absolute;
+	top: 20%;
+	left: 30%;
+	width: 500px;
+	height: 350px;
+	color: aliceblue;
+}
+
+.bibipic{
+	height: 300px;
+	width: 500px;
+}

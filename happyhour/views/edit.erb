@@ -1,0 +1,13 @@
+<form method="POST" action="/guest/<%= @current_attendee.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <input type="text" name="firstname" value="<%= @current_attendee.name %>">
+  <input type="text" name="lastname" value="<%= @current_attendee.last_name %>">
+  <input type="text" name="age" value="<%= @current_attendee.age %>">
+  <input type="text" name="likesbeer" value=" <%= @current_attendee.likes_beer %>">
+  <button type="submit">Edit</button>
+</form>
+
+<form action="/guest/<%= @current_attendee.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Remove</button>
+</form>

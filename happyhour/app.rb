@@ -12,15 +12,15 @@ get '/' do
 	erb :index	
 end
 
-get '/edit' do 
-	erb :edit
-end
+# get '/edit' do 
+# 	erb :edit
+# end
 
 
-get '/edit' do 
-	@current_attendee = Attendee.find(params[:id])
-	erb :edit
-end
+# get '/edit' do 
+# 	@current_attendee = Attendee.find(params[:id])
+# 	erb :edit
+# end
 
 get '/guest' do
 	@attendees = Attendee.all 
